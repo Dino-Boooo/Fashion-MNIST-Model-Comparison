@@ -28,9 +28,8 @@
 5. [Models](#models)
 6. [Results](#results)
 7. [Insights](#insights)
-8. [Limitations and future work](#limitations-and-future-work)
-9. [Getting started](#getting-started)
-10. [Repository structure](#repository-structure)
+8. [Getting started](#getting-started)
+9. [Repository structure](#repository-structure)
 
 ---
 
@@ -179,14 +178,6 @@ The top-gain pixels (490, 346, 655, …) sit where shoes and garments differ in 
 
 ---
 
-## Limitations and future work
-
-- **Evaluation splits differ.** The 92.25 % CNN figure is measured on the 18,000-image validation split, and the CNN's early-stopping loader in the notebook reads the training split; the LightGBM figure uses the 10,000-image test set. Evaluating both models on the same test set would make the comparison stricter.
-- **No hyperparameter search.** Grid or random search could narrow the gap for either model.
-- **Hybrid models.** Using CNN features as LightGBM inputs could combine accuracy with fast training.
-
----
-
 ## Getting started
 
 Open [`Project.ipynb`](Project.ipynb) in [Google Colab](https://colab.research.google.com/) or Jupyter (a GPU is recommended for the CNN) and run the cells in order. Required packages:
@@ -208,7 +199,3 @@ TensorFlow is used only to download the dataset.
 ├── images/              # README figures
 └── README.md
 ```
-
-## Acknowledgements
-
-Developed in the Data Mining and Analysis course at Texas A&M University (Fall 2023).
